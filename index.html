@@ -1,25 +1,176 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kroatischer Urlaub – Domain zu vermieten</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KroatischerUrlaub.com – Domain zu vermieten / Domain for rent</title>
+  <meta name="description" content="KroatischerUrlaub.com – Premium-Domain für Tourismus in Kroatien. Vermietung, Zusammenarbeit oder Übernahme. Contact: zagrebrental2000@gmail.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg-overlay: rgba(0,0,0,.45);
+      --card-bg: rgba(255,255,255,.9);
+      --accent: #18a999;
+      --accent-2: #126b63;
+      --text: #0d0f12;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; 
+      font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:#fff;
+      /* Slobodno promijeni fotku: */
+      background-image:
+        linear-gradient(var(--bg-overlay),var(--bg-overlay)),
+        url("https://images.unsplash.com/photo-1526481280698-8fcc13fd1b89?q=80&w=2000&auto=format&fit=crop");
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+    .shell{
+      width:min(960px,100%);
+    }
+    .hero{
+      text-align:center;
+      padding:36px 28px;
+      border-radius:22px;
+      backdrop-filter: blur(2px);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.18);
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+    }
+    .brand{letter-spacing:.5px;font-weight:700;font-size:clamp(26px,5vw,44px);margin:.2rem 0 1rem}
+    .tag{opacity:.95;font-size:clamp(14px,2.2vw,18px);margin:0 0 1.25rem}
+    .langs{
+      display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-bottom:18px;
+    }
+    .lang-btn{
+      border:1px solid rgba(255,255,255,.35);
+      color:#fff; background:transparent;
+      padding:8px 12px; border-radius:999px; cursor:pointer;
+      font-weight:600; transition:.18s all ease;
+    }
+    .lang-btn[aria-pressed="true"], .lang-btn:hover{
+      background:var(--accent); border-color:transparent;
+    }
+    .card{
+      margin-inline:auto; text-align:left; color:var(--text);
+      background:var(--card-bg); padding:22px 22px; border-radius:16px;
+      box-shadow:0 12px 28px rgba(0,0,0,.18);
+    }
+    .card h2{margin:0 0 .35rem; font-size:clamp(18px,2.4vw,22px)}
+    .card p{margin:.35rem 0; line-height:1.5}
+    .grid{display:grid; gap:14px; grid-template-columns:1fr}
+    @media (min-width:720px){
+      .grid{grid-template-columns:repeat(3,1fr)}
+    }
+    .cta{
+      margin-top:18px; display:inline-flex; align-items:center; gap:10px;
+      background:var(--accent); color:#fff; text-decoration:none; font-weight:700;
+      padding:12px 18px; border-radius:999px; transition:.2s background;
+    }
+    .cta:hover{background:var(--accent-2)}
+    .mini{opacity:.8; font-size:12px; margin-top:8px}
+    footer{margin-top:16px; text-align:center; opacity:.8; font-size:12px}
+    a{color:var(--accent-2); font-weight:600}
+  </style>
 </head>
 <body>
-  <h1>Kroatischer Urlaub – kroatischerurlaub.com</h1>
-  <p>Diese Domain ist verfügbar zur <strong>Vermietung</strong>, <strong>Zusammenarbeit</strong> oder <strong>Übernahme</strong>.</p>
-  <p>Kontaktieren Sie uns: <a href="mailto:zagrebrental2000@gmail.com">zagrebrental2000@gmail.com</a></p>
+  <main class="shell">
+    <section class="hero">
+      <h1 class="brand">KroatischerUrlaub.com</h1>
+      <p class="tag" id="tagline">
+        Premium domain for tourism in Croatia — available for rent, collaboration, or acquisition.
+      </p>
 
-  <hr>
+      <!-- Language switch -->
+      <div class="langs" role="tablist" aria-label="Language selector">
+        <button class="lang-btn" data-lang="de" aria-pressed="true">🇩🇪 Deutsch</button>
+        <button class="lang-btn" data-lang="en" aria-pressed="false">🇬🇧 English</button>
+        <button class="lang-btn" data-lang="hr" aria-pressed="false">🇭🇷 Hrvatski</button>
+      </div>
 
-  <h2>English</h2>
-  <p>This domain is available for <strong>rent</strong>, <strong>collaboration</strong> or <strong>acquisition</strong>.</p>
-  <p>Contact: <a href="mailto:zagrebrental2000@gmail.com">zagrebrental2000@gmail.com</a></p>
+      <div class="grid" id="content">
+        <!-- Deutsch -->
+        <article class="card lang lang-de" aria-live="polite">
+          <h2>Diese Domain ist verfügbar</h2>
+          <p>zur <strong>Vermietung</strong>, <strong>Zusammenarbeit</strong> oder <strong>Übernahme</strong>. Ideal für Reisebüros, Vermieter, Portale oder Agenturen in Kroatien.</p>
+          <p>Seit 2009 registriert — vertrauenswürdige, leicht merkbare Marke.</p>
+          <a class="cta" href="mailto:zagrebrental2000@gmail.com?subject=KroatischerUrlaub.com%20Anfrage">Kontakt aufnehmen</a>
+          <div class="mini">E-Mail: <a href="mailto:zagrebrental2000@gmail.com">zagrebrental2000@gmail.com</a></div>
+        </article>
 
-  <hr>
+        <!-- English -->
+        <article class="card lang lang-en" hidden>
+          <h2>This domain is available</h2>
+          <p>for <strong>rent</strong>, <strong>collaboration</strong>, or <strong>acquisition</strong>. Perfect for travel agencies, rental managers, portals, or marketing teams targeting Croatia.</p>
+          <p>Registered since 2009 — a trustworthy, memorable name.</p>
+          <a class="cta" href="mailto:zagrebrental2000@gmail.com?subject=KroatischerUrlaub.com%20Inquiry">Contact now</a>
+          <div class="mini">E-mail: <a href="mailto:zagrebrental2000@gmail.com">zagrebrental2000@gmail.com</a></div>
+        </article>
 
-  <h2>Hrvatski</h2>
-  <p>Domena je dostupna za <strong>najam</strong>, <strong>suradnju</strong> ili <strong>preuzimanje</strong>.</p>
-  <p>Kontakt: <a href="mailto:zagrebrental2000@gmail.com">zagrebrental2000@gmail.com</a></p>
+        <!-- Hrvatski -->
+        <article class="card lang lang-hr" hidden>
+          <h2>Domena je dostupna</h2>
+          <p>za <strong>najam</strong>, <strong>suradnju</strong> ili <strong>preuzimanje</strong>. Idealno za turističke agencije, iznajmljivače, portale ili marketing usmjeren na Hrvatsku.</p>
+          <p>Registrirana od 2009. — prepoznatljivo i lako pamtljivo ime.</p>
+          <a class="cta" href="mailto:zagrebrental2000@gmail.com?subject=KroatischerUrlaub.com%20Upit">Pošaljite upit</a>
+          <div class="mini">E-mail: <a href="mailto:zagrebrental2000@gmail.com">zagrebrental2000@gmail.com</a></div>
+        </article>
+      </div>
+
+      <footer>© KroatischerUrlaub.com • Static landing (no tracking, no cookies)</footer>
+    </section>
+  </main>
+
+  <script>
+    // language switcher
+    const btns = document.querySelectorAll('.lang-btn');
+    const blocks = {
+      de: document.querySelector('.lang-de'),
+      en: document.querySelector('.lang-en'),
+      hr: document.querySelector('.lang-hr')
+    };
+    const tagline = document.getElementById('tagline');
+    const lines = {
+      de: "Premium-Domain für Tourismus in Kroatien — verfügbar zur Vermietung, Zusammenarbeit oder Übernahme.",
+      en: "Premium domain for tourism in Croatia — available for rent, collaboration, or acquisition.",
+      hr: "Premium domena za turizam u Hrvatskoj — dostupna za najam, suradnju ili preuzimanje."
+    };
+
+    btns.forEach(b=>{
+      b.addEventListener('click', ()=>{
+        const lang = b.dataset.lang;
+        // toggle buttons
+        btns.forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
+        // toggle cards
+        Object.keys(blocks).forEach(k=>{
+          blocks[k].hidden = (k!==lang);
+        });
+        // swap tagline
+        tagline.textContent = lines[lang];
+        // set html lang attr
+        document.documentElement.lang = lang === 'hr' ? 'hr' : lang;
+        // remember choice
+        try{ localStorage.setItem('ku_lang', lang); }catch(e){}
+      });
+    });
+
+    // load preferred language if stored
+    try{
+      const saved = localStorage.getItem('ku_lang');
+      if(saved && blocks[saved]){
+        document.querySelector(`.lang-btn[data-lang="${saved}"]`).click();
+      }
+    }catch(e){}
+  </script>
 </body>
 </html>

@@ -61,17 +61,33 @@
     .lang-btn[aria-pressed="true"], .lang-btn:hover{
       background:var(--accent); border-color:transparent;
     }
-    .card{
-      margin-inline:auto; text-align:left; color:var(--text);
-      background:var(--card-bg); padding:22px 22px; border-radius:16px;
-      box-shadow:0 12px 28px rgba(0,0,0,.18);
-    }
-    .card h2{margin:0 0 .35rem; font-size:clamp(18px,2.4vw,22px)}
-    .card p{margin:.35rem 0; line-height:1.5}
-    .grid{display:grid; gap:14px; grid-template-columns:1fr}
-    @media (min-width:720px){
-      .grid{grid-template-columns:repeat(3,1fr)}
-    }
+/* centriraj i proširi karticu */
+.grid{
+  display:flex;
+  justify-content:center;  /* centrira vodoravno */
+}
+
+.card{
+  margin-inline:auto;
+  text-align:left;
+  color:var(--text);
+  background:var(--card-bg);
+  padding:22px 22px;
+  border-radius:16px;
+  box-shadow:0 12px 28px rgba(0,0,0,.18);
+  width:min(720px, 96%);   /* šire, ali i dalje responsive */
+}
+
+.card h2{
+  margin:0 0 .35rem;
+  font-size:clamp(18px, 2.4vw, 22px);
+}
+
+.card p{
+  margin:.35rem 0;
+  line-height:1.5;
+}
+
     .cta{
       margin-top:18px; display:inline-flex; align-items:center; gap:10px;
       background:var(--accent); color:#fff; text-decoration:none; font-weight:700;

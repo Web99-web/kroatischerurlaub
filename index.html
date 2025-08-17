@@ -97,6 +97,25 @@
     .mini{opacity:.8; font-size:12px; margin-top:8px}
     footer{margin-top:16px; text-align:center; opacity:.8; font-size:12px}
     a{color:var(--accent-2); font-weight:600}
+
+    <!-- Badge u dnu (CSS ubaci u <style> sekciju) -->
+<style>
+.badge-visits{position:fixed;right:14px;bottom:12px;background:#fff;border:1px solid #e5e7eb;
+box-shadow:0 6px 18px rgba(0,0,0,.08);border-radius:999px;padding:6px 10px;font:500 12px/1.2 system-ui;}
+</style>
+
+<div class="badge-visits" id="visits">Visits: –</div>
+
+<script>
+(function(){
+  const KEY='urlaub_visits_v1';
+  let n=Number(localStorage.getItem(KEY)||10000);
+  n++; localStorage.setItem(KEY,n);
+  const el=document.getElementById('visits');
+  if(el) el.textContent='Visits: '+n.toLocaleString('en-US');
+})();
+</script>
+
   </style>
 </head>
 <body>
